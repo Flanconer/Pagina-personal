@@ -1,0 +1,143 @@
+
+
+/* Contenedor de partículas - Ocupa toda la página */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh; /* Ocupa toda la pantalla */
+ 
+  z-index: -1; /* Se mantiene detrás del contenido */
+}
+
+/* Ajustes para el contador de partículas */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats, .count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+/* Estilos adicionales */
+.nombre_clase .titulo_1 {
+  background-color: #4703b3;
+}
+
+.font_sinzeXL {
+  font-size: 30px;
+}
+
+.titulo_bienvenida {
+  color: #4703b3;
+}
+
+.titulo_bienvenida:hover {
+  color: #fa0808;
+}
+
+.titulo_bienvenida::first-letter {
+  color: aqua;
+}
+.p{
+  font-size: 2em;
+}
+.cajas_1{
+  background-color: red;
+  height: 150px;
+  width: 300px;
+}
+.cajas_2{
+  background-color: blue;
+  height: 150px;
+  width: 300px;
+}
+div{
+  display: block;
+}
+.display_block {
+  text-align: center; /* Centra los elementos dentro del contenedor */
+  margin-top: 20px; /* Espacio superior para el contenedor */
+}
+
+/* Estilo para las cajas con inline-block */
+.cajas_1, .cajas_2 {
+  display: inline-block; /* Los elementos se comportan como bloques en línea */
+ /* Color de fondo verde */
+   /* Texto blanco */
+  padding: 15px 25px; /* Espaciado interno */
+  margin: 10px; /* Espacio entre las cajas */
+  text-align: center; /* Centra el texto */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Hace que parezca un botón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
+
+}
+:root{
+  --primary-color: #627362;
+  --main-font: Amaranth,sans-serif;
+}
+body {
+  font-family: var(--main-font);
+}
+/* Efecto cuando el mouse pasa sobre el botón */
+.display_block div:hover::after {
+  content: attr(data-description);
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.display_block div {
+  position: relative;
+  padding: 15px;
+  margin: 5px;
+
+  text-align: center;
+  cursor: pointer;
+}
+.display_block div:hover::after {
+  content: attr(data-description);
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
